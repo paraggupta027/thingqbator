@@ -16,7 +16,8 @@
 <body>
     <h1>THANK u for responding {{name}}...</h1><br>
     {% if count>0 %}
-        <h1 >THERE IS INFECTED PEOPLE IN YOUR LOCATION...PLS TAKE PRECATIONS...!!!</h1>
+        <h1 >THERE ARE INFECTED PEOPLE IN YOUR LOCATION...PLS TAKE PRECATIONS...!!!</h1><br>
+        <h1>AND THE CLOSEST INFECTED PERSON IS AT A DISTANCE OF {{closest}}METRES FROM U....</h1>
     {% else %}
         <h1>U R SAFE...BUT PLS BE CAREFUL...!!</h1>
     {% endif %}
