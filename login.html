@@ -7,27 +7,28 @@
          src = "{{ url_for('static', filename = 'validation.js') }}" ></script>
 
     <link href="{{ url_for('static', filename = 'ext.css') }}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="ind.css">
          
 </head>
-<body>
+<body class="image">
     
     <form action ="{{ url_for('logi') }}" target="_blank" name="login_form" method = "POST" >
-        <p>Enter Full Name:</p>
-        <p><input type = "text" name = "name" id="fname" onchange="capital()" /></p>
+        <br><br><div class="name">Enter Full Name:</div>
+        <div ><input type = "text" name = "name" id="fname" onchange="capital()" /></div><br>
 
-        <p>City:</p>
+        <div class="name">City:</div>
 
-        <input type = "text" name = "city" id="fcity"/>
+        <div><input type = "text" name = "city" id="fcity"/></div><br>
 
-        <p>State:</p>
-        <input type="text" name="state" id="fstate" />
+        <div class="name">State:</div>
+        <div><input type="text" name="state" id="fstate" /></div><br>
 
 
-        <p>covidStatus: (yes or no)</p>
+        <div class="name">Covid Status: (yes or no)</div>
 
-        <p><input type = "text" name = "status" /></p>
+        <p><input type = "text" name = "status" /></p><br>
 
-        <button type="=submit" onclick="onlick()">Submit</button>
+        <button type="=submit" class="button" onclick="onlick()">Submit</button>
 
      </form>
      
