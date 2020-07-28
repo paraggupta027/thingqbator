@@ -1,0 +1,34 @@
+.name{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    color: darkblue;
+    font-style: oblique;
+}
+
+input[type=text]{
+    width: 27%;
+    margin-left: 35%;
+    height: 2em;
+    background-color: greenyellow;
+    font-weight: bolder;
+    padding-left: 1em;
+    font-size: larger;
+}
+
+.button {
+    background-color: purple;
+    margin-left: 40%;
+    width: 7em;
+    height: 2em;
+    font-size: xx-large;
+    cursor: pointer;
+    border-radius: 5em;
+    
+  }
+
+  .image{
+      background-image: url(https://github.com/yaggya01/WEEK-OF-CODE-FINAL/blob/master/devjam%20proj/sts.PNG?raw=true);
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
