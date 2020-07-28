@@ -4,22 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="h1.css">
+    
 </head>
-<style>
-    body{
-        background-color: burlywood;
-    }
-    h1{
-        color:rgb(34, 79, 228);
-    }
-</style>
-<body>
-    <h1>THANK u for responding {{name}}...</h1><br>
+
+<body class="img">
+    <div class="center">THANK u for responding {{name}}...
+
+    </div><br><br><br>
     {% if count>0 %}
-        <h1 >THERE ARE INFECTED PEOPLE IN YOUR LOCATION...PLS TAKE PRECATIONS...!!!</h1><br>
-        <h1>AND THE CLOSEST INFECTED PERSON IS AT A DISTANCE OF {{closest}}METRES FROM U....</h1>
+        <div class="center" >THERE ARE INFECTED PEOPLE IN YOUR LOCATION...PLS TAKE PRECATIONS...!!!</div><br><br>
+        <div class="center">AND THE CLOSEST INFECTED PERSON IS AT A DISTANCE OF {{closest}}METRES FROM YOU....</div><br><br>
     {% else %}
-        <h1>U R SAFE...BUT PLS BE CAREFUL...!!</h1>
+        <div class="center">YOU ARE SAFE...BUT PLS BE CAREFUL...!!</div>
     {% endif %}
 </body>
     
