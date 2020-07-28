@@ -1,0 +1,14 @@
+.center{
+    text-align: center;
+    font-size: xx-large;
+    font-family: fantasy;
+    color: royalblue
+}
+
+.img{
+    background-image: url(https://ak.picdn.net/shutterstock/videos/28657612/thumb/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
