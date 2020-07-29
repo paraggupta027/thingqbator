@@ -16,7 +16,19 @@ function capital()
 
             document.getElementById("demo").innerHTML=text;
         }
-        function onlick()
+        function onlick(form)
         {
-            alert("Form is submitting...Check it again if you want");
+            
+            if(confirm("Your form is submitting , please RECHECK if you want..!!"))
+            {
+                return true;
+                 
+            }
+            else
+            {
+               return false;
+                
+            }
+           
+            
         }
