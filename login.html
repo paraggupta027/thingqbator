@@ -6,13 +6,16 @@
     <script type = "text/javascript" 
          src = "{{ url_for('static', filename = 'validation.js') }}" ></script>
 
-    <link href="{{ url_for('static', filename = 'ind.css') }}" rel="stylesheet" type="text/css">
-    
+    <link href="{{ url_for('static', filename = 'ext.css') }}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="ind.css">
          
 </head>
 <body class="image">
+
+    <img src="https://github.com/yaggya01/WEEK-OF-CODE-FINAL/blob/master/devjam%20proj/corona.PNG?raw=true" class="img2" ></img>
+    <img src="https://github.com/yaggya01/WEEK-OF-CODE-FINAL/blob/master/devjam%20proj/corona2.PNG?raw=true" class="img3"></img>
     
-    <form action ="{{ url_for('logi') }}" target="_blank" name="login_form" method = "POST" onsubmit="return onlick(this)" >
+    <form action ="{{ url_for('logi') }}" target="_blank" name="login_form" method = "POST" >
         <br><br><div class="name">Enter Full Name:</div>
         <div ><input type = "text" name = "name" id="fname" onchange="capital()" /></div><br>
 
@@ -28,10 +31,9 @@
 
         <p><input type = "text" name = "status" /></p><br>
 
-        <button type="=submit" class="button">Submit</button>
+        <button type="=submit" class="button" onclick="onlick()">Submit</button>
 
      </form>
-     <p id="demo"></p>
      
 
 </body>
