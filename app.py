@@ -112,7 +112,7 @@ def logi():
             db.session.commit()
 
 
-            return render_template("hello.html",name=name,count=total,closest=(minn*1000))
+            return render_template("hello.html",name=name,count=total,closest=(int)(minn*1000))
    
 
 if __name__ == '__main__':
