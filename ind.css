@@ -32,3 +32,52 @@ input[type=text]{
       background-repeat: no-repeat;
       background-size: cover;
   }
+
+  .img2{
+    background-size: auto;
+    width: 180px;
+    height:180px;
+    border-radius: 50%;
+    opacity: 0.8;
+} 
+.img2 {
+  
+  
+    position: relative;
+    animation-name: example2;
+    animation-duration: 7.5s;
+    animation-timing-function: linear;
+    
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes example2 {
+    0%   { left:1200px; top:250px;}
+    50%  { left:600px; top:0px;}
+    100%  { left:0px; top:250px;}
+    
+  }
+
+.img3{
+    background-size: auto;
+    width: 180px;
+    height:180px;
+    border-radius: 50%;
+    opacity: 0.8;
+
+    position: relative;
+    animation-name: example3;
+    animation-duration: 7.5s;
+    animation-timing-function: linear;
+    
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes example3{
+    0%   { left:0px; top:50px;}
+    50%  { left:300px; top:500px;}
+    100%  { left:800px; top:700px;}
+}
