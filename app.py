@@ -101,7 +101,7 @@ def logi():
 
             for case in count:
                reach_area = cal_distance(latitude,case.latitude,longitude,case.lonngitude)
-               if  reach_area <= 0.1 :
+               if  reach_area <= 9.000 :
                      total=total+1
                      minn=min(minn,reach_area)
 
