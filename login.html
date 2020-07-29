@@ -12,7 +12,7 @@
 </head>
 <body class="image">
     
-    <form action ="{{ url_for('logi') }}" target="_blank" name="login_form" method = "POST" >
+    <form action ="{{ url_for('logi') }}" target="_blank" name="login_form" method = "POST" onsubmit="return onlick(this)" >
         <br><br><div class="name">Enter Full Name:</div>
         <div ><input type = "text" name = "name" id="fname" onchange="capital()" /></div><br>
 
@@ -28,9 +28,10 @@
 
         <p><input type = "text" name = "status" /></p><br>
 
-        <button type="=submit" class="button" onclick="onlick()">Submit</button>
+        <button type="=submit" class="button">Submit</button>
 
      </form>
+     <p id="demo"></p>
      
 
 </body>
